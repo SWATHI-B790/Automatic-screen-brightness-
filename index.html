@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Screen Brightness Concept</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+
+<body class="dark-mode">
+    <div class="background-image">
+        <!-- Navigation Tabs -->
+        <nav>
+            <a href="#home" onclick="changeTab('home')">Home</a>
+            <a href="#about" onclick="changeTab('about')">About</a>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="container" id="home-content">
+            <div class="home-content">
+                <h1>Welcome to the Automatic Screen Brightness App</h1>
+                <p>The Automatic Screen Brightness app adjusts the brightness of your device screen based on your environment's lighting conditions, providing optimal viewing comfort while reducing eye strain.</p>
+                <p>With this app, your device will intelligently adapt its screen brightness to match ambient lighting, ensuring you have a comfortable viewing experience, whether in a dark room or under bright sunlight.</p>
+                <p><strong>Protect Your Eyes:</strong> Constant exposure to bright screens in low-light conditions can cause eye strain and discomfort. This app helps reduce this by lowering the screen brightness in dark environments, preventing eye fatigue and improving comfort.</p>
+
+                <!-- Download Button -->
+                <a href="https://github.com/Akilesh-programmer/Automatic_Brightness_Controller" class="download-btn">Download App</a>
+            </div>
+        </div>
+
+        <!-- About Content Area (Hidden by default) -->
+        <div class="container" id="about-content" style="display: none;">
+            <div class="about-content">
+                <h2>About Automatic Screen Brightness</h2>
+                <p>Automatic Screen Brightness is a technology that adjusts the screen brightness of your device based on the surrounding light. This reduces power consumption and provides a better viewing experience by ensuring the screen is neither too bright nor too dim for the lighting conditions.</p>
+                <p>The system uses sensors, usually located near the camera or on the front of the device, to measure the ambient light levels. It then adjusts the screen brightness in real-time, optimizing visibility while also saving battery life, especially when you're in low-light conditions.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+
+</html>

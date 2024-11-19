@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    text-align: center; /* Center text */
+    background-color: #121212;
+    color: white;
+}
+
+h1, h2, p {
+    font-weight: bold;
+    font-size: 1.2rem; /* Medium font size */
+    margin: 15px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger font for the main heading */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Navigation Tab Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Button Styles */
+.download-btn {
+    display: block;
+    background-color: #0066cc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Content Styles */
+.home-content, .about-content {
+    margin-top: 100px; /* To prevent the content from being covered by the fixed navbar */
+}
+
+.background-image {
+    background-image: url('https://source.unsplash.com/1920x1080/?technology,lighting'); /* Copyright-free background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Adjust font size on smaller screens */
+    }
+    p, nav a {
+        font-size: 1rem; /* Adjust font size for readability on smaller screens */
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+}
